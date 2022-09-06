@@ -1,0 +1,192 @@
+Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+print("Alo mundo")
+
+Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número]
+n= int(input ("insira valor de n:"))
+print ("o numero digitado foi", n)
+
+
+Faça um Programa que peça dois números e imprima a soma.
+n1= int(input ("insira valor de n1:"))
+n2= int(input ("insira valor de n2:"))
+soma=n1+n2
+print (soma,"é a soma")
+
+
+
+Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+
+n1= int(input ("insira valor de n1:"))
+n2= int(input ("insira valor de n2:"))
+n3= int(input ("insira valor de n1:"))
+n4= int(input ("insira valor de n1:"))
+soma=(n1+n2+n3+n4)/4
+print (soma)
+
+
+
+
+Faça um Programa que converta metros para centímetros.
+
+n1= int(input ("digite a medida :"))
+soma=n1*10
+print (soma,"centrimetros")
+
+
+
+Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. A = π r²
+
+n1= int(input ("informe o raio do circulo :"))
+area=3.14*(n1**2)
+print (area,"centrimetros")
+
+
+Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+n1= int(input ("inforne o tamanho do lado do quadrado :"))
+print (n1**2,"é a area do quadrado", (n1**2)*2,"é o dobro da area")
+
+
+
+Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+n1= float(input ("informe seu rendimento por hora :"))
+h1= float(input ("informe a quantidadode horas no mês:"))
+print (n1*h1, "este é o valor do salário no referido mês")
+
+
+Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
+
+    C = 5 * ((F-32) / 9). 
+t1= float(input ("informe a temperatura (oF):"))
+print (5 * ((t1-32) / 9), "este é o valor da temperatura em graus Celsius")
+
+
+
+
+Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
+(
+t1= float(input ("informe a temperatura (oF):"))
+print (((t1 * 9/5) + 32), "este é o valor do temperatura em Fahrenheit")
+
+
+
+Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+
+    o produto do dobro do primeiro com metade do segundo .
+    a soma do triplo do primeiro com o terceiro.
+    o terceiro elevado ao cubo. 
+
+
+n1= int(input ("numero inteiro:"))
+n2= int(input ("informe outro numero inteiro:"))
+n3= float(input ("agora um numero real:"))
+print ((n1*(n2/2)), "o produto do dobro do primeiro com metade do segundo")
+print (((n1*3)+n3), " a soma do triplo do primeiro com o terceiro.")
+print ((n3**3), " o terceiro elevado ao cubo. ")
+
+
+
+
+Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58
+
+a1= float(input ("numero inteiro:"))
+print ((72.7*a1) - 58, " é o seu peso ideal ")
+
+
+
+
+
+Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+
+    Para homens: (72.7*h) - 58
+    Para mulheres: (62.1*h) - 44.7 
+
+
+h=float(input ("numero inteiro:"))
+print ((72.7*h) - 58," é o seu peso ideal para homens e ", (62.1*h) - 44.7,"é o seu peso ideal para mulheres")
+
+
+
+
+
+João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.
+
+peso=float(input ("Peso do peixe transportado:"))
+extra=peso-50
+multa=4.00
+print ("Voçê esta transportanto peso excedente em",extra,"kilos, e será multado")
+print ("Você pagara", multa, "por kilo exedente")
+
+if extra > 0:
+    print (multa*extra," é o valor da multa por peso exedente")
+else:
+    print (extra," Kilos a mais alem do permitido, peso esta nos parametros aceitaveis")
+
+
+
+
+
+
+Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê:
+
+    salário bruto.
+    quanto pagou ao INSS.
+    quanto pagou ao sindicato.
+    o salário líquido.
+    calcule os descontos e o salário líquido, conforme a tabela abaixo:
+
+    + Salário Bruto : R$
+    - IR (11%) : R$
+    - INSS (8%) : R$
+    - Sindicato ( 5%) : R$
+    = Salário Liquido : R$
+
+    Obs.: Salário Bruto - Descontos = Salário Líquido. 
+
+
+n1= float(input ("informe seu rendimento por hora :"))
+h1= float(input ("informe a quantidadode horas no mês:"))
+
+salario=float(n1*h1)
+print (salario, "valor salario")
+
+inss=float(8/100)*salario
+print (inss, "valor inss")
+
+sindicato=float(5/100)*salario
+print (sindicato, "valor sinidicato")
+
+imposto=float(11/100)*salario
+print (imposto, "valor sinidicato")
+
+print (salario, "este é o valor do salário no referido mês")
+print (salario - inss - sindicato - imposto, "Valor do INSS")
+
+
+
+
+
+
+
+
+
+
+Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+
+
+print (l1= int(input ("inforne o tamanho em metros lado do lado 01 :")), l2= int(input ("inforne o tamanho em metros lado do lado 02 :")))
+cobertura=float(l1*l2)*3
+print ("vc precisara de", cobertura, "litros de tinta"
+
+print (" que compreende", latas= float(cobertura/18),"para compra"
+Print ("orcamento é de latas*80.00")
+
+
+
+Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00.
+
+    Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:
+    comprar apenas latas de 18 litros;
+    comprar apenas galões de 3,6 litros;
+    misturar latas e galões, de forma que o desperdício de tinta seja menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias. 
+
+Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).                                                                                                                          
